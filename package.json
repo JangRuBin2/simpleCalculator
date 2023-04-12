@@ -1,0 +1,20 @@
+{
+  "name": "simplecalculator",
+  "version": "1.0.0",
+  "description": "4개정도의 메서드가 모여있고 함수 4개 → 모듈로 사용",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JangRuBin2/simpleCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JangRuBin2/simpleCalculator/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/JangRuBin2/simpleCalculator#readme"
+}
