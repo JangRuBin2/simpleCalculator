@@ -90,7 +90,32 @@
   button_reset_C.addEventListener('click', () => {
     display.innerHTML = '0';
   })
+  // 빼기 모듈
+  const button_operator = document.querySelectorAll(".button_operator");
+  console.log(button_operator[0]);
+  button_operator[0].addEventListener('click',()=> {
+    // 빈 배열 생성
+   let frontNumber = [];
+  //  배열에 display에 입력된 값 넣기
+  frontNumber.push(display.innerHTML)
+  //  display 초기화
+   display.innerHTML = '0';
+  //  배열에 담긴 것 확인
+   console.log(frontNumber) 
+  //  test에서 뺄 숫자 저장
+   if(display.innerHTML = '0') {
+    
+    let backNumber = [];
+    backNumber.push(display.innerHTML)
+   console.log(backNumber)
+   }
+   
+  })
+  // for(let i=0; i<button_operator.length; i++)
 
+
+
+  
 
   
   </script>
