@@ -90,26 +90,28 @@
   button_reset_C.addEventListener('click', () => {
     display.innerHTML = '0';
   })
-  // 빼기 모듈
+  // 뺄셈 모듈
   const button_operator = document.querySelectorAll(".button_operator");
   console.log(button_operator[0]);
   button_operator[0].addEventListener('click',()=> {
     // 빈 배열 생성
-   let frontNumber = [];
+   let frontNumber = '';
   //  배열에 display에 입력된 값 넣기
-  frontNumber.push(display.innerHTML)
+  frontNumber = display.innerHTML;
   //  display 초기화
    display.innerHTML = '0';
   //  배열에 담긴 것 확인
    console.log(frontNumber) 
   //  test에서 뺄 숫자 저장
+  let backNumber = '';
    if(display.innerHTML = '0') {
-    
-    let backNumber = [];
-    backNumber.push(display.innerHTML)
-   console.log(backNumber)
-   }
-   
+    console.log(backNumber)
+       }
+   else{
+    backNumber = display.innerHTML;
+   console.log(backNumber)}
+    const result = frontNumber - backNumber
+    console.log(result)
   })
   // for(let i=0; i<button_operator.length; i++)
 
