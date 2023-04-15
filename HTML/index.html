@@ -54,6 +54,27 @@
     </div>
   </div>
 </body>
-<script src="/JS/index.js"></script>
 
+<script src="/JS/index.js"></script>
+<script>
+  // 눌린 숫자를 보여줄 display
+  const display = document.querySelector(".display");
+  display.innerHTML = '0'; 
+  // 버튼 숫자 데이터 가져오기
+  const button_number = document.querySelectorAll(".button_number")
+  console.dir(button_number[1].innerHTML);
+  // 버튼 누르면 숫자가 추가 됨
+  for(let i=0; i<button_number.length; i++) {
+    button_number[i].addEventListener('click',()=> {
+      if(display.innerHTML === '0') {
+        // 숫자 0 초기화
+        display.innerHTML = button_number[i].innerHTML;
+    }
+    else {
+      // 입력 한 숫자 display에 추가
+    display.innerHTML += button_number[i].innerHTML;}
+  })
+  }
+  
+  </script>
 </html>
