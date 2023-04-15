@@ -74,7 +74,24 @@
       // 입력 한 숫자 display에 추가
     display.innerHTML += button_number[i].innerHTML;}
   })
-  }
+  };
+
+  // 리셋 버튼 이벤트
+  const button_reset = document.querySelectorAll(".button_reset");
+  const button_reset_CE = button_reset[0];
+  const button_reset_C = button_reset[1];
+
+  // CE버튼은 slice 메서드 활용해서 display의 마지막 문자열 -1
+  button_reset_CE.addEventListener('click', () => {
+    const reset_display = display.innerHTML;
+    display.innerHTML = reset_display.slice(0,-1);
+  })
+
+  button_reset_C.addEventListener('click', () => {
+    display.innerHTML = '0';
+  })
+
+
   
   </script>
 </html>
